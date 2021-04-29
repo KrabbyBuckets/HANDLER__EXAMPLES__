@@ -17,7 +17,7 @@ const client = new Client({ partials: ["MESSAGE", "REACTION"] })
         wok.on('databaseConnected', (connection, state) => {
             console.log(`The connection state is "${state}"`)
         })
+        console.log(`${client.user.username} Is Ready!`)
     })
-    
     client.login(process.env.BOT_TOKEN)
 })()

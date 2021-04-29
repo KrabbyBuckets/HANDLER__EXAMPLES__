@@ -2,6 +2,7 @@ const WOK = require('wokcommands')
 const { Client, MessageEmbed } = require('discord.js')
 const client = new Client({ partials: ["MESSAGE", "REACTION"] })
 require('dotenv').config()
+;(async () => {
 client.on('ready', () => {
     let wok = new WOK(client, {
         commandsDir: './commands',
@@ -22,6 +23,8 @@ client.on('ready', () => {
     wok.on('databaseConnected', (connection, state) => {
         console.log(`The connection state is "${state}"`)
     })
+    console.log(`${client.user.username} Is Ready!`)
 })
 
 client.login(process.env.BOT_TOKEN)
+})()
