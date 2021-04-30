@@ -5,7 +5,6 @@ let client = new AeroClient({
     prefix: process.env.BOT_PREFIX,
     useDefaults: true,
     logging: true,
+    commandsPath: "./commands",
+    eventsPath: "./events"
 })
-
-client.loadCommands('./commands')
-client.loadEvents('./events')
