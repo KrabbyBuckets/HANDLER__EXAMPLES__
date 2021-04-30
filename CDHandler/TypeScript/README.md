@@ -13,6 +13,6 @@ BOT_TOKEN=BOT_TOKEN_HERE
 BOT_MONGOURI=MONGO_URL_HERE
 BOT_PREFIX=BOT_PREFIX_HERE
 ```
-## 4. Once Done Run `node .` To Start Up
+## 4. Once Done Run `ts-node .` To Start Up
 
 ## 5. Make Commands And Events
