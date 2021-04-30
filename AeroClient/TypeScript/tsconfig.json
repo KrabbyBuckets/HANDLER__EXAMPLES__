@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+		"module": "commonjs",
+		"outDir": "dist",
+		"watch": true,
+		"pretty": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true
+    },
+    "exclude": ["node_modules"]
+}
